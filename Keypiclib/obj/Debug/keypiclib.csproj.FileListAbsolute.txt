@@ -1,0 +1,5 @@
+D:\MyWork\keypiclib\keypiclib\bin\Debug\keypiclib.dll
+D:\MyWork\keypiclib\keypiclib\bin\Debug\keypiclib.pdb
+D:\MyWork\keypiclib\keypiclib\obj\Debug\ResolveAssemblyReference.cache
+D:\MyWork\keypiclib\keypiclib\obj\Debug\keypiclib.dll
+D:\MyWork\keypiclib\keypiclib\obj\Debug\keypiclib.pdb
