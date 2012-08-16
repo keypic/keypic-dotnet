@@ -18,5 +18,12 @@ namespace KeypicLib
             get { return (Boolean)this["debug"]; }
             set { this["debug"] = value; }
         }
+
+        [ConfigurationProperty("formID", DefaultValue="")]
+        public String FormID
+        {
+            get { return this["formID"].ToString(); }
+            set { this["formID"] = value; }
+        }
     }
 }

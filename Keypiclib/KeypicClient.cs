@@ -39,6 +39,7 @@ namespace KeypicLib
 
                 host = config.Host;
                 debug = config.Debug;
+                formID = config.FormID;
             }
         }
 

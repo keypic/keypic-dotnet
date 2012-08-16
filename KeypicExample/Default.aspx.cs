@@ -19,10 +19,10 @@ namespace KeypicExample
         {
             
             keypicClient = KeypicClient.GetInstance(); //get instance of Keypic Client
-            keypicClient.FormID = "8ee81a54e8df53eadae33ac1cf115c8a"; //set form id
 
             if (!IsPostBack) {
-                hdnToken.Value = keypicClient.GetToken(clientEmail, clientUsername, clientMessage, clientFingerPrint, 1);  //get new token
+                keypicClient.Token = keypicClient.GetToken(clientEmail, clientUsername, clientMessage, clientFingerPrint, 1);  //get new token
+                hdnToken.Value = keypicClient.Token;
             }
 
             if (keypicClient.IsErrorExist()) { // check for error
@@ -50,7 +50,8 @@ namespace KeypicExample
                 ltlErrorMessage.Text= ex.Message;
             }
 
-            hdnToken.Value = keypicClient.GetToken(clientEmail, clientUsername, clientMessage, clientFingerPrint, 1);
+            keypicClient.Token = keypicClient.GetToken(clientEmail, clientUsername, clientMessage, clientFingerPrint, 1);  //get new token
+            hdnToken.Value = keypicClient.Token;
         }
     }
 }
