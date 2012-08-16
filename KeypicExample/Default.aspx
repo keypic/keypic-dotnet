@@ -18,9 +18,8 @@
         {
             background: #fff;
             border: 2px solid #ddd;
-            position: absolute;
-            top: -75px;
-            right: 0px;
+            margin:5px 0;
+            width:150px
         }
         .keypic img
         {
